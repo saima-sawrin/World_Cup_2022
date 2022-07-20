@@ -411,7 +411,7 @@ Tablet device only
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
     margin-bottom: 2%;
-    margin-left: 8%;
+
     justify-content: center;
     align-items: center;
    }
@@ -426,10 +426,17 @@ Tablet device only
     justify-content: center; 
     align-items: center;
     margin-left:5%;
-    margin-right: 5%;
+    margin-right: 3%;
 
 
     
+   }
+   .match-section .matches{
+    margin-left:12%;
+
+   }
+   .match-section .blog-section{
+    margin-left: 0%;
    }
    .view button{
     visibility: visible;
