@@ -144,13 +144,19 @@ main{
     height: 56px;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 10%;
 }
 .matchinfo{
-    padding-left: 20px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0%; 
+    padding-bottom: 8%;
 }
 .matchinfo h2 , p{
     text-align: center;
+    
 }
 
 

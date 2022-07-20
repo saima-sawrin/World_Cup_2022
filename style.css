@@ -13,6 +13,7 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     
 }
 
@@ -26,6 +27,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    width: 100%;
    
     
 }
@@ -51,7 +53,7 @@ main{
     
 }
 .img_part{
-    width: 56%;
+    width: 48%;
 }
 
 .img_part img{
@@ -72,11 +74,13 @@ main{
     background-color: Transparent;
     align-items: center;
     margin-bottom: 111px;
-    cursor: grab;
-    
+    cursor: pointer;
+   
 }
-
-
+.watch_btn:hover{
+    color: #E8E8E8;
+    background-color: red;
+}
 /* Match section started */
 .match-section{
     display: flex;
@@ -149,6 +153,21 @@ main{
     column-gap: 5px;
    
 }
+.view button{
+  
+    visibility: hidden;
+       
+    background-color: red;
+    color: #E8E8E8;
+    height: 64px;
+    width: 252px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 45%;
+          
+}
 /* Footer section Started */
 .footer {
     background: linear-gradient(to right, rgb(28, 1, 17) 5.13%, rgb(63, 7, 29) 49.3%, rgb(93, 13, 40) 87.75%, rgb(138, 21, 56) 145.92%);
@@ -192,3 +211,223 @@ main{
 .social i{
     color: rgb(218, 217, 217);
 }
+/*------------------------------------------ 
+                Media Query 
+-------------------------------------------*/
+/* Display for Mobile Device */
+
+@media only screen and  (max-width:688px){
+    
+    .container{
+        max-width: 100%;
+        background-image: url(images/banner1.jpg);
+        
+        background-repeat: no-repeat; 
+        margin-bottom: 0%; 
+        padding-bottom: 0%;  
+        margin-left:1%;
+        margin-right: 3%;
+       
+    }
+    .img_part{
+        display: none;
+    }
+    
+    .text_section{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        text-align: left;
+        justify-items: left;
+        width: 85%;
+        height: 100%;
+        padding-left:5px;
+         margin-left: 2px;
+         margin-top: 10%;
+         margin-bottom: 0%;
+         padding-bottom: 10px;
+
+
+    }
+    .text_section h1{
+        color:white;
+        font-size: 50px;
+        font-weight: 700px;
+        line-height: 50px;
+        
+    }
+    .watch_btn{
+        font-size: 15px;
+        font-weight: 400px;
+        color: rgb(232, 18, 18);
+        border-radius: 215px;
+        border-color:white;
+        
+        padding: 5px 10px;
+        background-color: Transparent;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    /* Match Section started */
+    .blog-section{
+        max-width: 100%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+         margin-left: 1%;
+        /* margin-right: 4%; */
+        justify-content: center;
+      
+        
+
+    }
+    
+    .match-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-bottom: 0%;
+        margin-top: 0%;
+        justify-content: center;
+        margin-left: 3%;
+        margin-right: 2%;
+    
+       }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+         margin-left: 15%;
+        /* margin-right: 5%; */
+        justify-content: center;
+
+        
+    }
+    .view button{
+        visibility: hidden;
+       }
+
+    /* ----------------------    
+    Footer section started 
+    -----------------------*/
+    .footer{
+        width: 100%;
+        margin-top:3%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 2%;
+        padding-left: 0%;
+    }
+    .footer hr{
+        margin-top:0%;
+        margin-bottom: 1%;
+    }
+    .footer h1{
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .footer-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+        margin-top: 2%; 
+    }
+    .social{
+        margin-top: 5%;
+        color: white;
+        margin-bottom: 2%;
+    }
+    
+}
+/*---------------------------- 
+Tablet device only 
+-----------------------------*/
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .text_section{
+        width: 48%;
+        padding-left: 5px;
+    }
+   .blog-section{
+    width: 100%;
+    display: inline;
+    
+    height: 100%;
+   }
+   .blogs{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    height: 80px;
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 0%;
+
+   }
+   .blogs button{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 68px;
+    width: 235px;
+    border-radius: 10px;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+  }
+   .match-section{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    margin-bottom: 2%;
+    margin-left: 0%;
+   }
+   .matches{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+     padding-left: 5px;
+    /* margin-right: 5%; */
+    justify-content: center; 
+    align-items: center;
+    margin-left: 0%;
+    
+   }
+   .view button{
+    visibility: visible;
+    height: 44px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+    margin-left: 0%;
+      
+   }
+   .view{
+    justify-content: flex-start;
+    padding-left: 0%;
+    margin-left: 0%;
+   }
+   .footer{
+    width: 100%;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+   }
+   .footer-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    row-gap: 5px;
+    margin-top: 2%; 
+    justify-content: left;
+    margin-left: 0%;
+}
+.social{
+    margin-top: 5%;
+}
+
+}
+
