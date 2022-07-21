@@ -256,7 +256,7 @@ main{
     }
     main{
         overflow: hidden;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .img_part img{
         display: none;
@@ -374,7 +374,7 @@ Tablet device only
     .container{
         width: 100%;
         margin-bottom: 3%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .text_section{
         width: 48%;

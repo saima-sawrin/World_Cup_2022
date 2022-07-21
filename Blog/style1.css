@@ -25,7 +25,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
    
     
 }
@@ -235,12 +235,13 @@ main{
         background-repeat: no-repeat; 
         
         margin-bottom: 0%; 
-        padding-bottom: 0%;  
+        padding-bottom: 3%;  
         margin-left:1%;
-        margin-right: 3%;
+        margin-right: 2%;
         display: flex;
         flex-direction: column;   
   
+        overflow: hidden;
     }
     main{
         overflow: hidden;
@@ -259,11 +260,18 @@ main{
         height: 100%;
         padding-left:2px;
          margin-left: 2px;
-         margin-top: 5%;
-         margin-bottom: 5%;
+         margin-top: 1%;
+         margin-bottom: 10%;
          padding-bottom: 50px;
+    
 
-
+    }
+    .text_section h1{
+        color:white;
+        font-size: 50px;
+        font-weight: 700px;
+        line-height: 50px;
+        
     }
     .text_section h1{
         color:white;
@@ -290,8 +298,8 @@ main{
     .blog-section{
         max-width: 100%;
         margin-top: 0%;
-        margin-bottom: 10%;
-         margin-left: 1%;
+        margin-bottom: 5%;
+         margin-left: 1%;s
         /* margin-right: 4%; */
         justify-content: center;
       
@@ -367,9 +375,10 @@ Tablet device only
     .text_section{
         width: 48%;
         
-        padding-left: 5px;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-top: 8%;
+        margin-bottom: 3%;
         text-align: left;
     }
     .watch_btn{
