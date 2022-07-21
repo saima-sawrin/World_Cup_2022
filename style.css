@@ -14,6 +14,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    overflow: hidden;
     
 }
 
@@ -28,6 +29,7 @@ main{
     align-items: center;
     margin-bottom: 100px;
     width: 100%;
+    
    
     
 }
@@ -84,12 +86,12 @@ main{
 .watch_btn{
     font-size: 25px;
     font-weight: 400px;
-    color: rgb(232, 18, 18);
+    color: white;
     border-radius: 20px;
     border-color:white;
     
     padding: 10px 15px;
-    background-color: Transparent;
+    background-color: red;
     align-items: center;
     margin-bottom: 111px;
     cursor: pointer;
@@ -247,7 +249,13 @@ main{
         margin-right: 3%;
         display: flex;
         flex-direction: column;
+        
+        
   
+    }
+    main{
+        overflow: hidden;
+        overflow-y: hidden;
     }
     .img_part img{
         display: none;
@@ -278,12 +286,12 @@ main{
     .watch_btn{
         font-size: 15px;
         font-weight: 400px;
-        color: rgb(232, 18, 18);
+        color: white;
         border-radius: 215px;
         border-color:white;
         
         padding: 5px 10px;
-        background-color: Transparent;
+        background-color: red;
         align-items: center;
         cursor: pointer;
     
@@ -365,6 +373,7 @@ Tablet device only
     .container{
         width: 100%;
         margin-bottom: 3%;
+        overflow-x: hidden;
     }
     .text_section{
         width: 48%;
@@ -415,6 +424,9 @@ Tablet device only
     justify-content: center;
     align-items: center;
    }
+   .match-section:nth-child(n+2){
+    display: none;
+   }
    .matches{
    
 
@@ -427,9 +439,10 @@ Tablet device only
     align-items: center;
     margin-left:5%;
     margin-right: 3%;
-
-
     
+   }
+   .matches:nth-child(n+3){
+    display: none;
    }
    .match-section .matches{
     margin-left:12%;

@@ -47,6 +47,7 @@ main{
     font-size: 16px;
     font-weight: 400px;
     line-height: 26px;
+    text-align: left;
     
 }
 .img_part{
@@ -158,7 +159,21 @@ main{
     text-align: center;
     
 }
-
+.view button{
+  
+    visibility: hidden;
+       
+    background-color: red;
+    color: #E8E8E8;
+    height: 64px;
+    width: 252px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 45%;
+          
+}
 
 /* Footer section Started */
 .footer {
@@ -203,3 +218,278 @@ main{
 .social i{
     color: rgb(218, 217, 217);
 }
+
+/*------------------------------------------ 
+                Media Query 
+-------------------------------------------*/
+/* Display for Mobile Device */
+
+@media only screen and  (max-width:688px){
+    
+    .container{
+         width: 100%;
+        background-image: url(images/banner1.jpg);
+        
+        background-repeat: no-repeat; 
+        
+        margin-bottom: 0%; 
+        padding-bottom: 0%;  
+        margin-left:1%;
+        margin-right: 3%;
+        display: flex;
+        flex-direction: column;   
+  
+    }
+    main{
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+    .img_part img{
+        display: none;
+    }
+    
+    .text_section{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        text-align: left;
+        justify-items: left;
+        width: 80%;
+        height: 100%;
+        padding-left:2px;
+         margin-left: 2px;
+         margin-top: 5%;
+         margin-bottom: 5%;
+         padding-bottom: 50px;
+
+
+    }
+    .text_section h1{
+        color:white;
+        font-size: 50px;
+        font-weight: 700px;
+        line-height: 50px;
+        
+    }
+    .watch_btn{
+        font-size: 15px;
+        font-weight: 400px;
+        color: white;
+        border-radius: 215px;
+        border-color:white;
+        
+        padding: 5px 10px;
+        background-color: red;
+        align-items: center;
+        cursor: pointer;
+    
+        
+    }
+    /* Match Section started */
+    .blog-section{
+        max-width: 100%;
+        margin-top: 0%;
+        margin-bottom: 10%;
+         margin-left: 1%;
+        /* margin-right: 4%; */
+        justify-content: center;
+      
+        
+
+    }
+    
+    .match-section{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-bottom: 0%;
+        margin-top: 0%;
+        justify-content: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    
+       }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+         margin-left: 14%;
+        /* margin-right: 5%; */
+        justify-content: center;
+
+        
+    }
+    .view button{
+        visibility: hidden;
+       }
+
+    /* ----------------------    
+    Footer section started 
+    -----------------------*/
+    .footer{
+        width: 100%;
+        margin-top:3%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 2%;
+        padding-left: 0%;
+    }
+    .footer hr{
+        margin-top:0%;
+        margin-bottom: 1%;
+    }
+    .footer h1{
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .footer-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+        margin-top: 2%; 
+    }
+    .social{
+        margin-top: 5%;
+        color: white;
+        margin-bottom: 2%;
+    }
+    
+}
+/*---------------------------- 
+Tablet device only 
+-----------------------------*/
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        margin-bottom: 3%;
+        overflow-y: hidden;
+    }
+    .text_section{
+        width: 48%;
+        
+        padding-left: 5px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    .watch_btn{
+        font-size: 15px;
+        font-weight: 400px;
+        color: white;
+        border-radius: 215px;
+        border-color:white;
+        
+        padding: 5px 10px;
+        background-color: red;
+        align-items: center;
+        cursor: pointer;
+    
+        
+    }
+   .blog-section{
+    width: 100%;
+    display: inline;
+    padding-right: ;
+    
+    height: 100%;
+   }
+   .blogs{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    height: 80px;
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 0%;
+    
+    margin-right: 50%;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .blogs button{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    column-gap: 5px;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+  }
+   .match-section{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    margin-bottom: 2%;
+
+    justify-content: center;
+    align-items: center;
+   }
+   .match-section:nth-child(n+2){
+    display: none;
+   }
+   .matches{
+   
+
+        /* margin-right: 5%; */
+        justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+     padding-left: 20px;
+    justify-content: center; 
+    align-items: center;
+    margin-left:5%;
+    margin-right: 3%;
+    
+   }
+   .matches:nth-child(n+3){
+    display: none;
+   }
+   .match-section .matches{
+    margin-left:12%;
+
+   }
+   .match-section .blog-section{
+    margin-left: 0%;
+   }
+   .view button{
+    visibility: visible;
+    height: 44px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 16px;
+    margin-left: 3%;
+      
+   }
+   .view{
+    visibility: visible;
+    justify-content: flex-start;
+    padding-left: 0%;
+    margin-left: 2%;
+   }
+   .footer{
+    width: 100%;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+   }
+   .footer-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    row-gap: 5px;
+    margin-top: 2%; 
+    justify-content: left;
+    margin-left: 0%;
+}
+  .social{
+    margin-top: 5%;
+  }
+
+}
+
+
