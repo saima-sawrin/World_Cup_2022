@@ -14,7 +14,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -196,6 +196,7 @@ main{
     flex-direction: column;
     align-items: center;
     color: white;
+    overflow-x: hidden;
 }
 .footer hr{
     border: 1px 0px solid white;
